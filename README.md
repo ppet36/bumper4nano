@@ -4,4 +4,12 @@ This is my modification of BumperDuino from Ardumower.de site for Arduino Nano i
 
 Original sources is available here https://github.com/Ardumower/ardumower
 
-TODAY WORK IN PROGRESS
+# Schematic
+![alt](/eagle/sch.png)
+
+# PCB
+PCB is designed as single sided with one wire jumper.
+![alt](/eagle/dps.png)
+
+# Demo
+Short demo is available here https://www.youtube.com/watch?v=Bmwo4UEfQBU
