@@ -15045,7 +15045,7 @@ Source: http://www.osram.convergy.de/</description>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X4" device="" value="BUMPCONN"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
-<part name="C2" library="rcl" deviceset="CPOL-EU" device="E2,5-6E" value="47u"/>
+<part name="C2" library="rcl" deviceset="CPOL-EU" device="E2,5-6E" value="330u"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="050-024X044" value="10n"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="050-035X075" value="1u"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="050-024X044" value="470p"/>
