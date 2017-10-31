@@ -80,17 +80,16 @@ void loop() {
 
     digitalWrite (LEDActivePin, LEDActiveState);
   }
+
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;
+    int i;
+    for (i = 0; i < NUM_OF_SENSORS; i++) {
+      flagAdcRead[i] = 1;
+    }
+  }
   
   for (index = 0; index < NUM_OF_SENSORS; index++) {    
-    if (currentMillis - previousMillis >= interval) {
-      previousMillis = currentMillis;
-      int i;
-      for (i = 0; i < NUM_OF_SENSORS; i++) flagAdcRead[i] = 1;
-    }
-  
-    // --------------------------------------------------------------------------------
-
-  
     // --------------------------------------------------------------------------------
     // ------------------------- Calculate Zero-Point ---------------------------------
     if (sensorState[index] < 1) {
