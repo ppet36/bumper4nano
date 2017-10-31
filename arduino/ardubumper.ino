@@ -81,11 +81,11 @@ void loop() {
     digitalWrite (LEDActivePin, LEDActiveState);
   }
   
-  for (index = 0; index < NUM_OF_SENSORS; index++) {
-    
+  for (index = 0; index < NUM_OF_SENSORS; index++) {    
     if (currentMillis - previousMillis >= interval) {
-      previousMillis = currentMillis;   
-      flagAdcRead[index] = 1;
+      previousMillis = currentMillis;
+      int i;
+      for (i = 0; i < NUM_OF_SENSORS; i++) flagAdcRead[i] = 1;
     }
   
     // --------------------------------------------------------------------------------
